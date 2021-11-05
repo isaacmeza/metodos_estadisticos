@@ -1,0 +1,95 @@
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{wasysym}
+\usepackage{spverbatim}
+\usepackage{natbib}
+\usepackage{dsfont}
+\usepackage{lmodern}
+\setcitestyle{square}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm}	
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{nameref}
+\usepackage{multirow}
+\usepackage{animate}
+\usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,positioning,fit,matrix, calc, quotes, angles, decorations.pathreplacing}
+\usepackage{tikz-cd}
+\usepackage{wrapfig}
+\tikzset{node distance=2cm, auto}
+%PARA el gif
+\usepackage{animate}
+%Para los comentarios
+\usepackage{comment}
+
+
+  \usetheme{Madrid}       % or try default, Darmstadt, Warsaw, ...
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{serif}    % or try default, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+
+
+
+
+\newcommand{\vspan}[1]{\text{span}\left\lbrace #1\right\rbrace}
+\newcommand{\dual}[2]{\left\langle #1 , #2\right\rangle}
+\def\quotient#1#2{%
+    \raise1ex\hbox{$#1$}\big/\hbox{$#2$}%
+}
+
+\newcommand{\norm}[1]{\left|\left| #1\right|\right |}
+
+\newcommand{\ultra}[1]{\left( #1\right)_\mathcal{U}}
+
+\newenvironment{variableblock}[3]{%
+  \setbeamercolor{block body}{#2}
+  \setbeamercolor{block title}{#3}
+  \begin{block}{#1}}{\end{block}}
+  
+  
+\graphicspath{{./Figuras/}} 
+
+\usepackage{listings}
+\usepackage{color}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  language=R,                     % the language of the code
+  basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+  stepnumber=1,                   % the step between two line-numbers. If it's 1, each line
+                                  % will be numbered
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  title=\lstname,                 % show the filename of files included with \lstinputlisting;
+                                  % also try caption instead of title
+  keywordstyle=\color{blue},      % keyword style
+  commentstyle=\color{dkgreen},   % comment style
+  stringstyle=\color{mauve},      % string literal style
+  escapeinside={\%*}{*)},         % if you want to add a comment within your code
+  morekeywords={*,...}            % if you want to add more keywords to the set
+} 
