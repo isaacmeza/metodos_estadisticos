@@ -25,7 +25,7 @@ library(sp) #spatial objects; used by rgdal
 key<-"clavesecretadelmal"
 register_google(key = key)
 
-setwd('C:/Users/xps-seira/Dropbox/Apps/ShareLaTeX/metodos_estadisticos/Rscripts')
+setwd('C:/Users/isaac/Dropbox/Apps/ShareLaTeX/metodos_estadisticos/Rscripts')
 
 # Read in the CSV data and store it in a variable
 
@@ -83,8 +83,8 @@ geocoded_sp <- st_as_sf(geocoded ,coords = c("lon","lat"),crs=4326, sf_column_na
 jlca <- st_sf(
     folio = "0000-0000" ,
     demandado = 0,
-    addresses = "Av. Dr. Río de la Loza 68, Doctores, 06720 Ciudad de México, CDMX, Mexico",
-    geoAddress= "Av. Dr. Río de la Loza 68, Doctores, 06720 Ciudad de México, CDMX, Mexico",
+    addresses = "Av. Dr. R?o de la Loza 68, Doctores, 06720 Ciudad de M?xico, CDMX, Mexico",
+    geoAddress= "Av. Dr. R?o de la Loza 68, Doctores, 06720 Ciudad de M?xico, CDMX, Mexico",
     geometry = st_sfc(st_point(c(-99.14541650000001, 19.4245109)))
   ) %>% 
   st_set_crs(4326) %>% # because the point was taken from Google Maps coordinates
@@ -97,9 +97,9 @@ jlca <- st_sf(
 
 
 # Use OSRM's server
-# options(osrm.server = "http://router.project-osrm.org/")
+#options(osrm.server = "http://router.project-osrm.org/")
 # Use local instance
- options(osrm.server = "http://localhost:5000/")
+options(osrm.server = "http://localhost:5000/")
 
  
 for(i in 1:nrow(geocoded)) {

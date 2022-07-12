@@ -1,0 +1,86 @@
+@article{chim,
+ ISSN = {00063444, 14643510},
+ URL = {http://www.jstor.org/stable/27798811},
+ abstract = {Estimation of average treatment effects under unconfounded or ignorable treatment assignment is often hampered by lack of overlap in the covariate distributions between treatment groups. This lack of overlap can lead to imprecise estimates, and can make commonly used estimators sensitive to the choice of specification. In such cases researchers have often used ad hoc methods for trimming the sample. We develop a systematic approach to addressing lack of overlap. We characterize optimal subsamples for which the average treatment effect can be estimated most precisely. Under some conditions, the optimal selection rules depend solely on the propensity score. For a wide range of distributions, a good approximation to the optimal rule is provided by the simple rule of thumb to discard all units with estimated propensity scores outside the range [0·1, 0·9].},
+ author = {RICHARD K. CRUMP and V. JOSEPH HOTZ and GUIDO W. IMBENS and OSCAR A. MITNIK},
+ journal = {Biometrika},
+ number = {1},
+ pages = {187--199},
+ publisher = {[Oxford University Press, Biometrika Trust]},
+ title = {Dealing with limited overlap in estimation of average treatment effects},
+ volume = {96},
+ year = {2009}
+}
+
+
+@article{cate_ml,
+    author = {Knaus, Michael C and Lechner, Michael and Strittmatter, Anthony},
+    title = "{Machine learning estimation of heterogeneous causal effects: Empirical Monte Carlo evidence}",
+    journal = {The Econometrics Journal},
+    volume = {24},
+    number = {1},
+    pages = {134-161},
+    year = {2020},
+    month = {06},
+    abstract = "{We investigate the finite-sample performance of causal machine learning estimators for heterogeneous causal effects at different aggregation levels. We employ an empirical Monte Carlo study that relies on arguably realistic data generation processes (DGPs) based on actual data in an observational setting. We consider 24 DGPs, eleven causal machine learning estimators, and three aggregation levels of the estimated effects. Four of the considered estimators perform consistently well across all DGPs and aggregation levels. These estimators have multiple steps to account for the selection into the treatment and the outcome process.}",
+    issn = {1368-4221},
+    doi = {10.1093/ectj/utaa014},
+    url = {https://doi.org/10.1093/ectj/utaa014},
+    eprint = {https://academic.oup.com/ectj/article-pdf/24/1/134/37482874/utaa014.pdf},
+}
+
+@inproceedings{ai_ml,
+  title={Machine Learning Methods for Estimating Heterogeneous Causal Eects},
+  author={Susan Athey and Guido Imbens},
+  year={2015}
+}
+
+
+
+
+
+
+
+
+@article{athey_wager,
+author = {Stefan Wager and Susan Athey},
+title = {Estimation and Inference of Heterogeneous Treatment Effects using Random Forests},
+journal = {Journal of the American Statistical Association},
+volume = {113},
+number = {523},
+pages = {1228-1242},
+year  = {2018},
+publisher = {Taylor & Francis},
+doi = {10.1080/01621459.2017.1319839},
+
+URL = { 
+        https://doi.org/10.1080/01621459.2017.1319839
+    
+},
+eprint = { 
+        https://doi.org/10.1080/01621459.2017.1319839
+    
+}
+
+}
+
+
+
+
+@article {athey_imbens,
+    author = {Athey, Susan and Imbens, Guido},
+    title = {Recursive partitioning for heterogeneous causal effects},
+    volume = {113},
+    number = {27},
+    pages = {7353--7360},
+    year = {2016},
+    doi = {10.1073/pnas.1510489113},
+    publisher = {National Academy of Sciences},
+    abstract = {In this paper we propose methods for estimating heterogeneity in causal effects in experimental and observational studies and for conducting hypothesis tests about the magnitude of differences in treatment effects across subsets of the population. We provide a data-driven approach to partition the data into subpopulations that differ in the magnitude of their treatment effects. The approach enables the construction of valid confidence intervals for treatment effects, even with many covariates relative to the sample size, and without {\textquotedblleft}sparsity{\textquotedblright} assumptions. We propose an {\textquotedblleft}honest{\textquotedblright} approach to estimation, whereby one sample is used to construct the partition and another to estimate treatment effects for each subpopulation. Our approach builds on regression tree methods, modified to optimize for goodness of fit in treatment effects and to account for honest estimation. Our model selection criterion anticipates that bias will be eliminated by honest estimation and also accounts for the effect of making additional splits on the variance of treatment effect estimates within each subpopulation. We address the challenge that the {\textquotedblleft}ground truth{\textquotedblright} for a causal effect is not observed for any individual unit, so that standard approaches to cross-validation must be modified. Through a simulation study, we show that for our preferred method honest estimation results in nominal coverage for 90\% confidence intervals, whereas coverage ranges between 74\% and 84\% for nonhonest approaches. Honest estimation requires estimating the model with a smaller sample size; the cost in terms of mean squared error of treatment effects for our preferred method ranges between 7{\textendash}22\%.},
+    issn = {0027-8424},
+    URL = {https://www.pnas.org/content/113/27/7353},
+    eprint = {https://www.pnas.org/content/113/27/7353.full.pdf},
+    journal = {Proceedings of the National Academy of Sciences}
+}
+
+
