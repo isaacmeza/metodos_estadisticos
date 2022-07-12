@@ -741,7 +741,7 @@ donde $p=\frac{Pr(S=1\;|\;D=1)-Pr(S=1\;|\;D=0)}{Pr(S=1\;|\;D=1)}$.
 
 \begin{enumerate}[(1)]
     \item Install \color{blue}\href{https://nodejs.org/en/}{Node.js} \color{black} 8.11.3 LTS (or current)
-    \item Extract the file osrm\_Release.zip (link from my \color{blue}\href{https://www.dropbox.com/s/eeo5f9ws7hmair4/osrm_Release.zip?dl=0}{Dropbox})
+    \item Extract the file osrm\_Release.zip (link from my \color{blue}\href{https://www.dropbox.com/s/eeo5f9ws7hmair4/osrm_Release.zip?dl=0}{Dropbox}).\color{black} This is the latest OSRM Windows build.
     \item \color{black} Copy the file  \color{blue}\href{https://download.geofabrik.de/north-america/mexico-latest.osm.pbf}{mexico-latest.osm.pbf} \color{black}in the osrm\_Release folder.
     \item Open Node.js command prompt
    \begin{enumerate}
@@ -749,7 +749,7 @@ donde $p=\frac{Pr(S=1\;|\;D=1)-Pr(S=1\;|\;D=0)}{Pr(S=1\;|\;D=1)}$.
         
                 \texttt{         cd $\sim$/osrm\_Release}  
                 
-        \item Extracting the road network\\
+        \item Extracting the road network\footnote{If instead you want MLD use \texttt{osrm-partition} and \texttt{osrm-customize} instead of \texttt{osrm-contract}.}\\
         
                 \texttt{         osrm-extract mexico-latest.osm.pbf}
                 
@@ -759,7 +759,15 @@ donde $p=\frac{Pr(S=1\;|\;D=1)-Pr(S=1\;|\;D=0)}{Pr(S=1\;|\;D=1)}$.
 \end{enumerate}
 
 This previous steps only need to be done once. This sets the road network for Mexico.
-
+    \begin{itemize}
+        \item You can also download the road network files \color{blue}\href{https://www.dropbox.com/s/2yflj2kfb24ujms/mexico-latest.zip?dl=0}{here}. \color{black} (Extract and copy in the osrm-Release folder. 
+    \end{itemize}
+    
+    \begin{enumerate}[(1)]
+\setcounter{enumi}{4}
+\item Install R package \texttt{osrm} (Version I'm using is \textbf{\texttt{\href{https://cran.r-project.org/src/contrib/Archive/osrm/}{Package} osrm version 3.0.2}}
+    \end{enumerate}
+    
 \end{frame}
 \begin{frame}[allowframebreaks]{Instalación de OSRM}
     
@@ -786,7 +794,15 @@ In order to launch OSRM as a local instance the following steps are needed.
         \includegraphics[width=0.7\textwidth]{Figuras/osrm.pdf}
         \end{center}
 \end{figure}
+\end{frame}
 
+\begin{frame}{Recursos}
+\begin{itemize}
+    \item Github repo : \href{https://github.com/Project-OSRM/osrm-backend}{https://github.com/Project-OSRM/osrm-backend}
+    \item Build using docker on Windows : \href{https://phabi.ch/2020/05/06/run-osrm-in-docker-on-windows/}{https://phabi.ch/2020/05/06/run-osrm-in-docker-on-windows/}
+\end{itemize}
+
+\vspace{15mm}
 De regreso a los \hyperlink{inst}{\beamerbutton{instrumentos}}.
 
 \end{frame}
