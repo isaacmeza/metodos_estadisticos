@@ -32,13 +32,9 @@ options(osrm.server = "http://router.project-osrm.org/")
 # --max-table-size option.
 
 # Now try it on a local server to avoid the 10,000 query limit:
-# First follow the instructions here to install and build the OSRM server:
-# https://datawookie.netlify.com/blog/2017/09/building-a-local-osrm-instance/
-# or:
-# https://github.com/Project-OSRM/osrm-backend/wiki/Running-OSRM
+
 
 # Once the local server is running:
 options(osrm.server = "http://localhost:5000/")
 #Compute distances
 distances <- osrmTable(src = src, dst = dst)
-#Check the function osrmViaroute  for pairwise comparisons.
